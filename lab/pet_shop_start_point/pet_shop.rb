@@ -18,11 +18,11 @@ class PetShop
     pets_found_by_breed = @pets.find_all {|pet| pet.type == type}
     pet_names = pets_found_by_breed.map {|pet| pet.name}
     return pet_names
-  end #note: .map will search a class for a/all objects specifed
+  end #note: .map will search a class for an array of all objects
 
   def get_number_of_pets_costing_at_least(amount)
     pets_found = @pets.find_all {|pet| pet.price >= amount}
     return pets_found.count
-  end
+  end #note: .find_all will search a class for specifed conditions
 
 end
