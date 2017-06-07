@@ -3,6 +3,7 @@ class Cake
   attr_reader :name, :ingredients, :rating
 
   @@number_of_cakes = 0
+  #note: use @@ to asign a property on a class
 
   def initialize(name, ingredients, rating)
     @@number_of_cakes += 1
